@@ -12,10 +12,6 @@ $(document).ready(function () {
       }
    });
 
-   //$(".checkbox").change(function() {
-
-   //})
-
    $(this).on("change", ".checkbox", function() {
       if ($(this).attr("checked")) {
          $(this).removeAttr("checked");
