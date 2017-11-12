@@ -1,0 +1,36 @@
+body {
+  font-family: 'Kalam', cursive;
+  background: url(tennis.jpeg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.rowHeight {
+  height: 500px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #000;
+}
+
+.bg {
+  opacity: .8;
+  background-color: #c1c1c1;
+}
+
+.ima {
+  width: 300px;
+  height: 200px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  background-size: cover;
+}
+
+p {
+  font-size: 18px;
+  padding: 10px;
+}
