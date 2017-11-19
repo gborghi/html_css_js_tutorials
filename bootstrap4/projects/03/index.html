@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center">A project based approach to learn modal</h1>
+        <p class="text-center">
+          <a href="#" data-target="#login-modal" data-toggle="modal" role="button" class="btn btn-primary btn-lg">Login here</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="login-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <img id="myimage" src="assets/cat.jpg" alt="cat">
+        </div>
+        <div id="div-forms">
+          <form>
+            <div class="modal-body">
+              <div>
+                <span>Type your Email and password here:</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Email" required>
+              <input type="Password" class="form-control" placeholder="Password" required>
+              <div class="checkbox">
+                <label>
+                <input type="checkbox"> Remember me
+              </label>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div class="row">
+                <div class="col-sm-6">
+                  <button type="submit" class="btn btn-primary btn-lg">
+                    Login
+                  </button>
+                </div>
+                <div class="col-sm-6">
+                  <button type="submit" class="btn btn-primary btn-lg">
+                    Sign up
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+</html>
