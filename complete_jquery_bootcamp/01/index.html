@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" language="javascript">
+    $(document).ready(function() {
+      $("input").blur(function(){
+        alert("it blurred");
+      });
+      $("h3").bind("click", function() {
+        alert("clicked h3");
+      });
+      $("p").click(function() {
+        alert("it was clicked");
+        $(this).hide();
+      });
+      $("button.main").click(function() {
+
+        // $("*").hide();
+        // $("p.new").hide();
+        $("p:first").hide();
+        $("ul li:first-child").hide();
+        // $("ul li:first").hide();
+        $("[href]").hide();
+        $(":button").hide();
+        $("tr:even").css("background-color", "blue");
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+  <h3>this is the first paragraph</h3>
+  <p class="new">this is the second paragraph</p>
+  <p>this is the third paragraph</p>
+
+  <button class="main">Click here to hide</button>
+
+  <ul>
+    <li>tennis</li>
+    <li>soccer</li>
+    <li>baseball</li>
+  </ul>
+
+  <button>Just for fun</button>
+
+  <ul>
+    <li>delpiero</li>
+    <li>gattuso</li>
+  </ul>
+
+  <a href="https://www.facebook.com">Click for facebook</a>
+
+  <table border="1">
+    <tr>
+      <th>Game</th>
+      <th>Player</th>
+    </tr>
+    <tr>
+      <td>Cricket</td>
+      <td>James</td>
+    </tr>
+    <tr>
+      <td>Tennis</td>
+      <td>Roger</td>
+    </tr>
+    <tr>
+      <td>Baseball</td>
+      <td>John</td>
+    </tr>
+  </table>
+
+  Please enter your name: <input type="text">
+</body>
+
+</html>
